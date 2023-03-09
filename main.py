@@ -5,8 +5,8 @@ class Engine:
         self.rpm = rpm
         self.angle = 0
         self.piston_positions = [0, 0, 0, 0, 0, 0, 0, 0]
-        self.crankshaft_rad = 0.05 # meters
-        self.connecting_rod_length = 0.15 # meters
+        self.crankshaft_rad = 0.05 
+        self.connecting_rod_length = 0.15 
 
     def update(self, dt):
         self.angle += 2 * math.pi * self.rpm / 60 * dt
